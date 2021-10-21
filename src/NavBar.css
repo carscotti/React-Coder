@@ -1,6 +1,6 @@
 .NavBarContainer{
     background-color: gray;
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -14,7 +14,7 @@
 }
 
 .NavBarLista{
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -24,5 +24,5 @@
 }
 
 .NavBarItem{
-    width: 100%;
+    width: 90%;
 }
