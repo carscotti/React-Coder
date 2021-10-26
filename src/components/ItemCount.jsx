@@ -6,7 +6,8 @@ import './ItemCount.css';
 
 const ItemCount = ({stock, initial, onAdd}) => {
     const [counter, setCounter] = useState(initial);
-        const aumentarContador = () => counter >= 1 ? setCounter(counter + 1) : console.log(`No puede ser mayor a ${stock}`);
+        const aumentarContador = () => counter >= 1 ? setCounter(counter + 1) : console.log(`No puede ser mayor a ${stock}`)
+        
         const disminuirContador = () => counter < stock ? setCounter(counter - 1) : console.log('No puede ser menor a 1');
 
     return(
@@ -19,6 +20,7 @@ const ItemCount = ({stock, initial, onAdd}) => {
 
             <div className="coton_count">
                 <p>{counter}</p>
+                <button onClick={() => onAdd(counter)}>Agregar</button>
             </div>
 
             <button onClick={aumentarContador} className="buttonCount">
