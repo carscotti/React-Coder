@@ -6,9 +6,8 @@ import './ItemCount.css';
 
 const ItemCount = ({stock, initial, onAdd}) => {
     const [counter, setCounter] = useState(initial);
-        const aumentarContador = () => counter >= 1 ? setCounter(counter + 1) : console.log(`No puede ser mayor a ${stock}`)
-        
-        const disminuirContador = () => counter < stock ? setCounter(counter - 1) : console.log('No puede ser menor a 1');
+        const aumentarContador = () => counter < stock ? setCounter(counter + 1) : console.log(`No puede ser mayor a ${stock}`);
+        const disminuirContador = () => counter >= 1 ? setCounter(counter - 1) : console.log('No puede ser menor a 1');
 
     return(
 

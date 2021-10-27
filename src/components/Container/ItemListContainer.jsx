@@ -1,9 +1,9 @@
 
-import ItemCount from "../ItemCount";
+import ItemCount from '../ItemCount';
 
 const ItemListContainer = (props) => {
-    const handleClick=(total) => {
-        alert('La cantidad agregada es ${total}')
+    const handleClick=(counter) => {
+        alert (`La cantidad agregada es ${ counter }`)
     }
     return (
         <div className="contenedorDivBotonCount">
